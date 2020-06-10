@@ -1,16 +1,7 @@
-# flutter_auth
+# Paginas de bem-vindo, Login e cadastro - Flutter UI 
 
-A new Flutter project.
+**Pacotes usados :**
 
-## Getting Started
+- flutter_svg: [link](https://pub.dev/packages/flutter_svg)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A primeira é uma tela de boas-vindas, como o usuário abre o aplicativo e mostra que os usuários têm duas opções: se ele tiver uma conta, pressione o botão de login e ele apenas será direcionado para a tela de login ou se ele não tiver ' Para ter uma conta, pressione o botão de inscrição e transfere-a para a tela de inscrição.
