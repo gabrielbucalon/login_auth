@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Welcome/components/background.dart';
 import 'package:flutter_auth/components/rouded_button.dart';
+import 'package:flutter_auth/constants.dart';
 import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget {
@@ -16,8 +17,20 @@ class Body extends StatelessWidget {
           "Welcome To app Flutter Auth",
           style: TextStyle(fontWeight: FontWeight.w500),
         ),
+        SizedBox(height: size.height * 0.05),
         SvgPicture.asset("assets/icons/chat.svg", height: size.height * 0.45),
-        RoundedButton(size: size)
+        SizedBox(height: size.height * 0.05),
+        RoundedButton(
+            text: "LOGIN",
+            color: kPrimaryColor,
+            textColor: Colors.white,
+            press: () {}),
+        RoundedButton(
+          text: "REGISTER",
+          press: () {},
+          textColor: Colors.black,
+          color: kPrimaryLightColor,
+        ),
       ],
     ));
   }
