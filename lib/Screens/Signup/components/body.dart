@@ -7,6 +7,7 @@ import 'package:flutter_auth/components/already_have_an_account_acheck.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/components/rounded_input_field.dart';
 import 'package:flutter_auth/components/rounded_password_field.dart';
+import 'package:flutter_auth/constants.dart';
 import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget {
@@ -19,7 +20,7 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "SIGNUP",
+              "Registra-se",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: size.height * 0.03),
@@ -28,15 +29,17 @@ class Body extends StatelessWidget {
               height: size.height * 0.35,
             ),
             RoundedInputField(
-              hintText: "Your Email",
+              hintText: "Insira seu e-mail",
               onChanged: (value) {},
             ),
             RoundedPasswordField(
               onChanged: (value) {},
             ),
             RoundedButton(
-              text: "SIGNUP",
+              text: "Registrar",
               press: () {},
+              color: kPrimaryColor,
+              textColor: Colors.white,
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
