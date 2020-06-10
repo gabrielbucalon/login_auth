@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Login/login_screen.dart';
+import 'package:flutter_auth/Screens/Signup/signup_screen.dart';
 import 'package:flutter_auth/Screens/Welcome/components/background.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/constants.dart';
@@ -15,14 +16,14 @@ class Body extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
-          "Welcome To app Flutter Auth",
+          "Bem-vindo ao aplicativo Flutter atenticador",
           style: TextStyle(fontWeight: FontWeight.w500),
         ),
         SizedBox(height: size.height * 0.05),
         SvgPicture.asset("assets/icons/chat.svg", height: size.height * 0.45),
         SizedBox(height: size.height * 0.05),
         RoundedButton(
-            text: "LOGIN",
+            text: "Entrar",
             color: kPrimaryColor,
             textColor: Colors.white,
             press: () {
@@ -36,8 +37,15 @@ class Body extends StatelessWidget {
               );
             }),
         RoundedButton(
-          text: "REGISTER",
-          press: () {},
+          text: "Registra-se",
+          press: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return SignUpScreen();
+                }),
+              );
+          },
           textColor: Colors.black,
           color: kPrimaryLightColor,
         ),
